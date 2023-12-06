@@ -13,7 +13,7 @@ def main():
 
         if direction == 'Left':
             # Left path options
-            left_path = st.button('Enter Westfall')
+            left_path = st.button('Travel left')
 
             if left_path:
                 # Encounter in Elwynn Forest
