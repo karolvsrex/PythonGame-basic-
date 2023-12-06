@@ -9,15 +9,15 @@ def main():
         st.write("Welcome", name, "to the World of Vardheim")
 
         # Choose direction
-        direction = st.radio("You have the option to go left or right, which way do you travel?", ('Left', 'Right'))
+        direction = st.radio("You are outside of Goldshire in Elywynn Forest. You have the option to go left or right, which way do you travel?", ('Left', 'Right'))
 
         if direction == 'Left':
             # Left path options
-            left_path = st.button('Enter Elwynn Forest')
+            left_path = st.button('Enter Westfall')
 
             if left_path:
                 # Encounter in Elwynn Forest
-                st.write("You have entered Elwynn Forest.")
+                st.write("You have entered Westfall.")
                 defeat_defias = st.radio("Do you want to take down the Defias Brotherhood?", ('Yes', 'No'))
 
                 if defeat_defias == 'Yes':
@@ -29,7 +29,7 @@ def main():
 
         elif direction == 'Right':
             # Right path
-            if st.button('Travel right from Elwynn Forest'):
+            if st.button('Travel right'):
                 st.write("You make a right turn from Elwynn Forest and make your way into the Redridge Mountains")
 
 if __name__ == "__main__":
